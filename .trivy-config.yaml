@@ -1,9 +1,10 @@
 timeout: 10m
-format: json
+format: sarif
 dependency-tree: true
 list-all-pkgs: true
 exit-code: 0
-output: result.json
+output: 'trivy-results.sarif'
+ignore-unfixed: true
 severity:
   - HIGH
   - CRITICAL
