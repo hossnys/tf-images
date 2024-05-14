@@ -16,6 +16,7 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'config'
+          trivy-config: '.trivy-config.yaml'
           hide-progress: true
           format: 'sarif'
           output: 'trivy-results.sarif'
